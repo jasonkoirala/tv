@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_photo_upload">Upload Photo</string>
+
+    <string name="action_upload_photo">Post</string>
+    <string name="message_add_photo">Add some photos</string>
+    <string name="prompt_photo_album_description">Write something about the photos</string>
+    <string name="prompt_photo_caption">Photo Caption</string>
+    <string name="source_choice_title">Add photo from</string>
+
+    <string name="message_uploading_photos">Uploading photos</string>
+    <string name="message_uploading_success">Successfully posted</string>
+    <string name="message_uploading_failure">Image posting failed. Please try again.</string>
+
+    <string name="error_data_not_valid">Please check that the images are valid.</string>
+    <string name="error_could_not_load_photo">Please select proper photo.</string>
+</resources>

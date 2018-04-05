@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="own_album">My album</string>
+    <string name="other_albums">Other albums</string>
+
+    <string name="prompt_ok">OK</string>
+    <string name="message_photo_album_not_verified">Your photo album is being verified.</string>
+    <string name="message_getting_photos">Loading photos...</string>
+    <string name="message_no_photos">Currently no photos are available</string>
+    <string name="error_loading_photos">Could not load photos. Please try again.</string>
+    <string name="error_problem_occurred">Some problem occurred. Please try again.</string>
+</resources>

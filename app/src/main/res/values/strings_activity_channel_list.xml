@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_channel_list">Channels</string>
+
+    <string name="message_getting_channels">Loading TV channels...</string>
+    <string name="message_no_channels">Currently no channels are available for playing.</string>
+
+    <string name="subscription_alert_title">Subscription required</string>
+    <string name="subscription_alert_message">You need to subscribe a package to watch this channel</string>
+</resources>

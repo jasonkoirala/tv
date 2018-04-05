@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutNews"
+    android:background="@drawable/bg_card_vod"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    fresco:cardCornerRadius="8dp"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:padding="@dimen/spacing_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.shirantech.sathitv.widget.CustomFontBoldTextView
+            android:id="@+id/textViewNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="title"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewNewsSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="2dp"
+            android:text="summary"
+            android:textSize="12sp"
+            android:textColor="@color/primary_text_inverse"
+        />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <com.shirantech.sathitv.widget.CustomFontTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="2dp"
+               android:text="Source : "
+               android:textColor="@color/primary"
+               android:textSize="12sp"
+               />
+           <com.shirantech.sathitv.widget.CustomFontTextView
+               android:id="@+id/textViewNewsSource"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="2dp"
+               android:text="source"
+               android:textColor="@color/primary"
+               android:textSize="12sp"
+               />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.shirantech.sathitv.widget.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Date : "
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                />
+            <com.shirantech.sathitv.widget.CustomFontTextView
+                android:id="@+id/textViewNewsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="source"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageViewNews"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:pressedStateOverlayImage="@color/primary_transparent"
+        fresco:retryImage="@android:drawable/stat_notify_sync_noanim"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="4dp"
+        fresco:placeholderImage="@drawable/image_placeholder"
+        fresco:roundingBorderColor="@color/transparent_white"
+        fresco:roundingBorderWidth="2dp"
+        fresco:viewAspectRatio="1" />
+
+</LinearLayout>

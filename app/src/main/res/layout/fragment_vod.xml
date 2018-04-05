@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.shirantech.sathitv.fragment.VODFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewVod"
+        android:name="com.shirantech.sathitv.fragment.HoroscopeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.shirantech.sathitv.fragment.HoroscopeFragment"
+        />
+
+    <com.shirantech.sathitv.widget.CustomProgressView
+        android:id="@+id/progressViewVod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</FrameLayout>

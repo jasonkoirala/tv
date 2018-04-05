@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drawer_item_home">गृह</string>
+    <string name="drawer_item_janam_kundali">जनम कुण्डली उत्तर </string>
+    <string name="drawer_item_photo_gallery">फोटो गल्लेरी</string>
+    <string name="drawer_item_health_consultant">स्वास्थ्य परामर्शदाता जवाफ</string>
+    <string name="drawer_item_settings">सेटिंग</string>
+    <string name="drawer_item_feedback">प्रतिकृया</string>
+    <string name="drawer_item_about">हाम्रो बारेमा</string>
+    <string name="drawer_item_logout">बाहिर निस्कनुस</string>
+
+    <string name="homescreen_banner_text">बिज्ञापन देखाउने ठाउँ</string>
+    <string name="dashboard_channels">टेलिभिजन</string>
+    <!--<string name="dashboard_vod">भिडियो</string>-->
+    <!--<string name="dashboard_mod">चलचित्र </string>-->
+    <string name="dashboard_janam_kundali">जन्मकुण्डली</string>
+    <string name="dashboard_astrology">ज्योेतीस  शास्त्र</string>
+    <string name="dashboard_interviews">NRN बिशेष</string>
+    <string name="dashboard_news">समाचार</string>
+    <string name="dashboard_chitchat">कुराकानी</string>
+    <string name="dashboard_entertainment">मनोरञ्जन</string>
+    <string name="dashboard_health_consultant">स्वास्थ्य परामर्श</string>
+    <string name="dashboard_model_chitchat">कुराकानी</string>
+
+    <string name="horoscope">राशीफल</string>
+    <string name="message_getting_photos">फोटो लोड हुदै छ</string>
+    <string name="title_welcome">स्वागत</string>
+   <!-- health consultant strings-->
+    <string name="text_send">विवरण पठाउ</string>
+    <string name="text_view">जवाफ हेर्नु</string>
+    <string name="text_subject">विषय</string>
+    <string name="text_message">सन्देश</string>
+    <string name="text_symptoms">लक्षण</string>
+    <string name="text_upload">अपलोढ</string>
+    <string name="health_consultant_upload">तस्बिर अपलोढ \n (सम्भव भए)</string>
+    <string name="text_submit">पेश</string>
+    <string name="text_help">सहयोग</string>
+    <string name="title_health_consultant_reply">जवाफ</string>
+
+
+    <string name="prompt_name">नाम</string>
+
+    <!--janam kundali strings-->
+    <string name="janam_kundali_name">नाम</string>
+    <string name="janam_kundali_dob">जन्म मिति</string>
+    <string name="janam_kundali_place_of_birth">जन्म स्थान</string>
+    <string name="janam_kundali_gender">लिङ्ग</string>
+    <string name="janam_kundali_question">के जान्न चाहनु हुन्छ ?</string>
+    <string name="janam_kundali_time">जन्म समय</string>
+    <string name="janam_kundali_upload">चीना  अपलोढ\n (सम्भव भए)</string>
+    <string name="gender_male">पुरुष</string>
+    <string name="gender_female">महिला</string>
+    <string name="title_janam_kundali_reply">जवाफ</string>
+
+    <!--entertainment strings-->
+    <string name="title_vod">भिडियो</string>
+    <string name="title_mod">चलचित्र</string>
+    <string name="title_nrn_bishes">NRN बिशेष </string>
+</resources>

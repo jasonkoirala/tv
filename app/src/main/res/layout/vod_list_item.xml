@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayoutVod"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/bg_card_vod"
+    android:orientation="horizontal"
+    fresco:cardCornerRadius="8dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageViewVod"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/image_placeholder"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:pressedStateOverlayImage="@color/primary_transparent"
+        fresco:retryImage="@android:drawable/stat_notify_sync_noanim"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="4dp"
+        fresco:roundingBorderColor="@color/transparent_white"
+        fresco:roundingBorderWidth="2dp"
+        fresco:viewAspectRatio="1" />
+
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/play_icon"
+        android:layout_toRightOf="@id/imageViewVod"
+
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:orientation="vertical">
+
+        <com.shirantech.sathitv.widget.CustomFontBoldTextView
+            android:id="@+id/textViewVodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Sathi talk with Sushil koirala"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:layout_below="@id/textViewVodTitle"
+            android:id="@+id/textViewVodTypeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Sathi TV"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:layout_below="@id/textViewVodTypeName"
+            android:id="@+id/textViewVodDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_tiny"
+            android:text="duration"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:layout_below="@id/textViewVodDuration"
+            android:id="@+id/textviewVodDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_tiny"
+            android:singleLine="false"
+            android:text="2016-02-12"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@id/play_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:src="@drawable/ic_entertainment_play" />
+</RelativeLayout>

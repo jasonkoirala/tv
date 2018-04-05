@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_janam_kundali_reply">Janam Kundali Reply</string>
+
+    <string name="title_name">Name</string>
+    <string name="title_gender">Gender</string>
+    <string name="title_dob">Birth Date</string>
+    <string name="title_time">Birth Time</string>
+    <string name="title_place">Birth Place</string>
+
+    <string name="message_getting_reply">Loading your reply...</string>
+
+    <string name="message_no_request_yet">You have not requested for Janam Kundali yet</string>
+    <string name="message_no_request_yet_health_consultant">You have not requested for Health Consultancy yet</string>
+    <string name="message_no_interviews_yet">There are no interviews yet</string>
+    <string name="video_not_ready_alert_title">Reply not ready</string>
+    <string name="video_not_ready_alert_message">Your Janam Kundali request is being prepared. Please check again later</string>
+</resources>

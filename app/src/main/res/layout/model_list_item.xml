@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutModelList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/bg_card_vod"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageViewModel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/image_placeholder"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:pressedStateOverlayImage="@color/primary_transparent"
+        fresco:retryImage="@android:drawable/stat_notify_sync_noanim"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="4dp"
+        fresco:roundingBorderColor="@color/transparent_white"
+        fresco:roundingBorderWidth="2dp"
+        fresco:viewAspectRatio="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_small">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewModelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/spacing_medium"
+            android:text="Name : "
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewModelDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Description "
+            android:textColor="@color/primary_text_inverse"
+             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <RatingBar
+
+                android:id="@+id/ratingBarModel"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/rating_barstyle" />
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="2dp">
+
+                <com.shirantech.sathitv.widget.CustomFontTextView
+                    android:id="@+id/textViewStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/bg_chat_textview"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/spacing_medium"
+                    android:text="Online "
+                    android:textColor="@color/primary_text_inverse"
+                    android:textSize="10sp" />
+
+
+                <com.shirantech.sathitv.widget.CustomFontButton
+                    android:id="@+id/buttonModelChat"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bg_chat_textview"
+                    android:padding="@dimen/spacing_tiny"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="Chat "
+                    android:textAllCaps="false"
+                    android:textColor="@color/primary_text_inverse"
+                    android:textSize="10sp" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

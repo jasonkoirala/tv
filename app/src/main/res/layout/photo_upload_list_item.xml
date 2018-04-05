@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:fadeDuration="300" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium">
+
+            <com.shirantech.sathitv.widget.CustomFontEditText
+                android:id="@+id/photo_caption_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_photo_caption" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <!-- TODO : change delete icon -->
+    <ImageButton
+        android:id="@+id/remove_photo_button"
+        android:layout_width="@dimen/spacing_xlarge"
+        android:layout_height="@dimen/spacing_xlarge"
+        android:layout_gravity="end"
+        android:background="@drawable/photo_action_selector"
+        android:src="@android:drawable/ic_delete"
+        fresco:actualImageScaleType="centerCrop" />
+</android.support.v7.widget.CardView>

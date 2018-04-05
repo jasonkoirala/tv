@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/bg_card_vod"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight=".75"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Subject:"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewHealthReplySubject"
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_weight="2"
+            android:padding="@dimen/spacing_tiny"
+            android:text="subject"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight=".75"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Message:"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewHealthReplyMessage"
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="2"
+            android:padding="@dimen/spacing_tiny"
+            android:text="message"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight=".75"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Symptoms:"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewHealthReplySymptoms"
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="2"
+            android:padding="@dimen/spacing_tiny"
+            android:text="symptoms"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight=".75"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Reply:"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewHealthReply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="@dimen/spacing_tiny"
+            android:text="reply"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight=".75"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Requested on:"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewHealthRequestedDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/spacing_tiny"
+            android:text="date"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight=".75"
+            android:padding="@dimen/spacing_tiny"
+            android:text="Replied on:"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textViewHealthReplyDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/spacing_tiny"
+            android:text="date"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shirantech.sathitv.widget.CustomFontButton
+            android:id="@+id/buttonViewUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:padding="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_tiny"
+            android:background="@drawable/selector_green_button"
+            android:text="View your image"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/spacing_tiny"
+            android:textColor="@color/primary_text_inverse" />
+
+        <com.shirantech.sathitv.widget.CustomFontButton
+            android:id="@+id/buttonViewReplyImage"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/spacing_tiny"
+            android:layout_marginBottom="@dimen/spacing_tiny"
+            android:padding="@dimen/spacing_small"
+            android:background="@drawable/selector_green_button"
+            android:text="View reply image"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_text_inverse" />
+    </LinearLayout>
+</LinearLayout>

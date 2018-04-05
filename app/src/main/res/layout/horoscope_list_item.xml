@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/bg_card_vod"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageViewHoroscope"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/spacing_medium"
+
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:pressedStateOverlayImage="@color/primary_transparent"
+        fresco:retryImage="@android:drawable/stat_notify_sync_noanim"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="4dp"
+        fresco:roundingBorderColor="@color/transparent_white"
+        fresco:viewAspectRatio="1" />
+    <!--fresco:placeholderImage="@drawable/image_placeholder"
+        fresco:backgroundImage="@drawable/ic_action_add"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:orientation="horizontal">
+
+            <com.shirantech.sathitv.widget.CustomFontBoldTextView
+                android:id="@+id/textViewHorscopeSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_small"
+                android:text="test1"
+                android:textColor="@color/primary"
+                android:textSize="16sp" />
+
+            <com.shirantech.sathitv.widget.CustomFontTextView
+                android:id="@+id/textViewHorscopeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_small"
+                android:text="test2"
+                android:textColor="@color/primary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textviewHoroscopeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_tiny"
+            android:singleLine="false"
+            android:text="test3"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
+

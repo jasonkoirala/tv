@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutLoginMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.shirantech.sathitv.activity.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_card_vod"
+        android:orientation="vertical"
+        android:padding="26dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:src="@drawable/icon_email" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/email_icon"
+                android:background="@android:color/transparent"
+
+                android:ems="10"
+                android:hint="@string/prompt_email"
+                android:inputType="none"
+                android:padding="@dimen/spacing_normal"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/password_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:src="@drawable/icon_password" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/password_icon"
+                android:background="@android:color/transparent"
+
+
+                android:ems="10"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:padding="@dimen/spacing_normal"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageViewLogin"
+        android:layout_above="@id/login_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/sathi_tv_logo"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:pressedStateOverlayImage="@color/primary_transparent"
+        fresco:retryImage="@android:drawable/stat_notify_sync_noanim"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="50dp"
+        fresco:roundingBorderColor="@color/transparent_white"
+        fresco:roundingBorderWidth="2dp"
+        fresco:viewAspectRatio="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="-20dp"
+        android:ems="6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large">
+
+            <com.shirantech.sathitv.widget.CustomFontButton
+                android:id="@+id/buttonLogin"
+                style="@android:style/TextAppearance.Medium.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_large"
+
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:background="@drawable/selector_red_button"
+                android:gravity="center"
+                android:text="@string/action_login"
+                android:textSize="14sp" />
+
+            <com.shirantech.sathitv.widget.CustomFontButton
+                android:id="@+id/buttonRegister"
+                style="@android:style/TextAppearance.Medium.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_large"
+
+                android:layout_toRightOf="@id/buttonLogin"
+                android:background="@drawable/selector_red_button"
+                android:gravity="center"
+                android:text="@string/action_register"
+
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.shirantech.sathitv.widget.CustomFontRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/spacing_tiny"
+            android:text="OR"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_blue_button"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:background="@color/button_facebook_blue"
+                android:src="@drawable/ic_fb" />
+
+            <com.shirantech.sathitv.widget.CustomFontTextView
+                android:id="@+id/textViewFacebook"
+                style="@android:style/TextAppearance.Medium.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_xlarge"
+                android:layout_margin="@dimen/spacing_small"
+                android:background="@color/button_facebook_blue"
+                android:text="Connect With Facebook"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- TODO : replace drawables in login_selector -->
+
+    <com.shirantech.sathitv.widget.CustomProgressView
+        android:id="@+id/progressViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:clickable="true"
+        android:visibility="gone" />
+</RelativeLayout>

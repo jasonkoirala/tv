@@ -1,0 +1,17 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="pref_key_selected_language">selected_language</string>
+    <string name="pref_title_change_language">Select Language</string>
+    <string-array name="pref_language_list_titles">
+        <item>Nepali</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="pref_language_list_values">
+        <item>NEPALI</item>
+        <item>ENGLISH</item>
+    </string-array>
+
+</resources>

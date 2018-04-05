@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.shirantech.sathitv.activity.RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:src="@drawable/sathi_tv_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageViewLogin"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_card_vod"
+                android:orientation="vertical"
+                android:padding="26dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRegistrationName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:src="@drawable/icon_name" />
+
+                    <EditText
+                        android:id="@+id/editTextRegistrationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/imageViewRegistrationName"
+                        android:background="@android:color/transparent"
+
+                        android:ems="10"
+                        android:hint="@string/prompt_name"
+                        android:inputType="none"
+                        android:padding="14dp"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRegistrationEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:src="@drawable/icon_email" />
+
+                    <EditText
+                        android:id="@+id/editTextRegistrationEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/imageViewRegistrationEmail"
+                        android:background="@android:color/transparent"
+
+                        android:ems="10"
+                        android:hint="@string/prompt_email"
+                        android:inputType="none"
+                        android:padding="14dp"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRegistrationPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:src="@drawable/icon_password" />
+
+                    <EditText
+                        android:id="@+id/editTextRegistrationPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/imageViewRegistrationPassword"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:padding="14dp"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRegistrationPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:src="@drawable/icon_phone" />
+
+                    <EditText
+                        android:id="@+id/editTextRegistrationPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/imageViewRegistrationPhone"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/prompt_phone"
+                        android:inputType="phone"
+                        android:padding="14dp"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRegistrationCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:src="@drawable/icon_country" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/country_autoCompleteTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_tiny"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/prompt_country"
+                        android:imeActionId="6"
+                        android:imeActionLabel="@string/action_register"
+                        android:imeOptions="actionDone"
+                        android:padding="14dp"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRegistrationDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:src="@drawable/icon_description" />
+
+                    <EditText
+                        android:id="@+id/editTextRegistrationDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/imageViewRegistrationDescription"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/title_description"
+                        android:padding="14dp"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium">
+
+                    <com.shirantech.sathitv.widget.CustomFontTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="@dimen/spacing_small"
+                        android:background="@drawable/bg_textview"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="Register As"
+                        android:textColor="@color/primary_text_inverse"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupRegisterAs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:checkedButton="@+id/radioButtonUser"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/spacing_small">
+
+                        <RadioButton
+                            android:id="@id/radioButtonUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_small"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/primary_text_inverse"
+                            android:padding="@dimen/spacing_tiny"
+                            android:text="User"
+                            android:textColor="@color/primary_text_inverse" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonModel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_small"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/primary_text_inverse"
+                            android:padding="@dimen/spacing_tiny"
+                            android:text="Model"
+                            android:textColor="@color/primary_text_inverse" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRegistration"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent_white"
+                        android:padding="@dimen/spacing_tiny"
+                        android:src="@drawable/image_placeholder"
+                        android:tint="@color/secondary_text" />
+
+                    <com.shirantech.sathitv.widget.CustomFontButton
+                        android:id="@+id/buttonUploadRegistration"
+                        style="@android:style/TextAppearance.Medium.Inverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/spacing_large"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/selector_green_button"
+                        android:ems="6"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:gravity="center"
+                        android:text="upload photo"
+                        android:textAllCaps="false"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.shirantech.sathitv.widget.CustomFontButton
+                android:id="@+id/register_button"
+                style="@android:style/TextAppearance.Medium.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_large"
+                android:layout_below="@id/linearLayoutRegistration"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/selector_red_button"
+                android:ems="6"
+                android:gravity="center"
+                android:text="@string/action_register"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+    <com.shirantech.sathitv.widget.CustomProgressView
+        android:id="@+id/progressViewRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

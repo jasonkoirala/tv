@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_subject">Subject</string>
+    <string name="text_message">Message</string>
+    <string name="text_symptoms">Symptoms</string>
+    <string name="title_health_consultant_reply">Health Consultant Reply</string>
+    <string name="error_health_subject_required">Subject is required</string>
+    <string name="error_health_message_required">Message is required</string>
+    <string name="error_health_symptoms_required">Symptoms is required</string>
+</resources>

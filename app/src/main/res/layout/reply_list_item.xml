@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/main_layout"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@drawable/dashboard_selector"
+    app:cardCornerRadius="@dimen/spacing_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/reply_title_view"
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark"
+            android:gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:text="Janam Kundali Reply for" />
+
+        <com.shirantech.sathitv.widget.CustomFontBoldTextView
+            android:id="@+id/name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reply_title_view"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/title_name" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reply_title_view"
+            android:layout_toEndOf="@id/name"
+            android:layout_toRightOf="@id/name"
+            android:padding="@dimen/spacing_medium"
+            android:text="name" />
+
+        <com.shirantech.sathitv.widget.CustomFontBoldTextView
+            android:id="@+id/gender"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_textView"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/title_gender" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/gender_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_textView"
+            android:layout_toEndOf="@id/name"
+            android:layout_toRightOf="@id/name"
+            android:padding="@dimen/spacing_medium"
+            android:text="gender" />
+
+        <com.shirantech.sathitv.widget.CustomFontBoldTextView
+            android:id="@+id/dob"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender_textView"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/title_dob" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/dob_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender_textView"
+            android:layout_toEndOf="@id/dob"
+            android:layout_toRightOf="@id/dob"
+            android:padding="@dimen/spacing_medium"
+            android:text="dob" />
+
+        <com.shirantech.sathitv.widget.CustomFontBoldTextView
+            android:id="@+id/time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob_textView"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/title_time" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/time_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob_textView"
+            android:layout_toEndOf="@id/time"
+            android:layout_toRightOf="@id/time"
+            android:padding="@dimen/spacing_medium"
+            android:text="time" />
+
+        <com.shirantech.sathitv.widget.CustomFontBoldTextView
+            android:id="@+id/birth_place"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_textView"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/title_place" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/birth_place_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_textView"
+            android:layout_toEndOf="@id/birth_place"
+            android:layout_toRightOf="@id/birth_place"
+            android:padding="@dimen/spacing_medium"
+            android:text="birth place" />
+
+        <!--<com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/video_view"
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark"
+            android:gravity="center"
+            android:layout_below="@id/birth_place_textView"
+            android:padding="@dimen/spacing_medium"
+            android:drawableRight="@drawable/ic_play_video"
+            android:text="Watch Video" />-->
+
+        <!-- TODO : change icon -->
+        <RelativeLayout
+            android:id="@+id/video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/name"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/reply_title_view"
+            android:gravity="center"
+            android:padding="@dimen/default_gap">
+
+            <com.shirantech.sathitv.widget.CustomFontTextView
+                android:id="@+id/watch_video_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:padding="@dimen/spacing_medium"
+                android:text="Watch It" />
+
+            <ImageView
+                android:id="@+id/play_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/watch_video_view"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_interview_play"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

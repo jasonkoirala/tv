@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shirantech.sathitv.activity.PhotoUploadActivity">
+   <!-- <item
+        android:id="@+id/action_submit_request"
+        android:title="@string/action_upload_photo"
+        app:showAsAction="always" />-->
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="window_background">@color/background_material_light</color>-->
+    <color name="window_background">@color/black</color>
+    <color name="transparent_black">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="button_green">#276800</color>
+    <color name="button_facebook_blue">#34579B</color>
+    <color name="light_blue">#0080FF</color>
+
+    <color name="transparent_white">#66FFFFFF</color>
+
+    <color name="primary">#CC1D2A</color>
+    <color name="green">#006633</color>
+    <color name="light_green">#009900</color>
+    <color name="primary_dark">#991620</color>
+   <color name="primary_light">#F0BBBF</color>
+    <color name="accent">#FCAC17</color>
+    <color name="primary_light_bg">#FFECEE</color>
+    <color name="primary_dark_pressed">#731118</color>
+    <color name="primary_transparent">#33CC1D2A</color>
+
+    <color name="primary_text">#DE000000</color>
+
+    <color name="primary_text_inverse">#FFFFFF</color>
+
+    <color name="secondary_text">#8A000000</color>
+
+    <color name="secondary_text_inverse">#B3FFFFFF</color>
+
+    <color name="hint_text">#42000000</color>
+
+    <color name="hint_text_inverse">#4DFFFFFF</color>
+
+    <color name="divider">#1F000000</color>
+    <color name="nrn_black">#2F2D2B</color>
+    <color name="divider_inverse">#1FFFFFFF</color>
+    <color name="border_textview">#C3BDBF</color>
+    <color name="light_red">#FF0000</color>
+</resources>

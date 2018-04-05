@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImage="@drawable/image_loading_error"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/image_placeholder"
+        fresco:placeholderImageScaleType="centerCrop" />
+
+    <com.shirantech.sathitv.widget.CustomFontTextView
+        android:id="@+id/caption_view"
+        style="@android:style/TextAppearance.Small.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/spacing_xlarge"
+        android:background="@color/transparent_black"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:padding="@dimen/spacing_medium" />
+
+    <FrameLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xlarge"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_black"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/comment_button"
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:background="@drawable/photo_action_selector"
+            android:src="@drawable/ic_comment" />
+
+        <ImageButton
+            android:id="@+id/rate_button"
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:layout_marginLeft="@dimen/spacing_xlarge"
+            android:layout_marginStart="@dimen/spacing_xlarge"
+            android:background="@drawable/photo_action_selector"
+            android:src="@drawable/ic_star"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/edit_button"
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:layout_marginLeft="@dimen/spacing_xlarge"
+            android:layout_marginStart="@dimen/spacing_xlarge"
+            android:background="@drawable/photo_action_selector"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone" />
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/rate_view"
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/primary_dark"
+            android:drawableEnd="@drawable/ic_star"
+            android:drawablePadding="@dimen/spacing_small"
+            android:drawableRight="@drawable/ic_star"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing_medium" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xlarge"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_black"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RatingBar
+                android:id="@+id/photo_ratingbar"
+                style="@style/RatingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="5"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="1" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <com.shirantech.sathitv.widget.CustomFontButton
+            android:id="@+id/submit_rate_button"
+            style="@android:style/TextAppearance.Medium.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/photo_action_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/rate_photo"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</FrameLayout>

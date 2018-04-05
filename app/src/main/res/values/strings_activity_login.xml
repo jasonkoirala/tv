@@ -1,0 +1,14 @@
+<resources>
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-mail ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+
+    <string name="message_logging_in">Signing in</string>
+
+    <string name="error_invalid_email">This email address is not valid</string>
+    <string name="error_password_short">Password must be 6 characters long</string>
+    <string name="error_email_required">Email cannot be empty</string>
+    <string name="error_password_required">Password cannot be empty</string>
+</resources>

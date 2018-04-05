@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/nav_header_bg"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="200dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageViewNavHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:padding="@dimen/spacing_medium"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/image_placeholder"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:pressedStateOverlayImage="@color/primary_transparent"
+        fresco:retryImage="@android:drawable/stat_notify_sync_noanim"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundedCornerRadius="40dp"
+        fresco:roundingBorderColor="@color/transparent_white"
+        fresco:roundingBorderWidth="2dp"
+        fresco:viewAspectRatio="1" />
+
+
+
+    <com.shirantech.sathitv.widget.CustomFontTextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_tiny"
+        android:singleLine="false"
+        android:text="@string/title_welcome"
+        android:textColor="@color/primary_text_inverse"
+        android:textSize="12sp" />
+
+
+    <com.shirantech.sathitv.widget.CustomFontTextView
+        android:id="@+id/textViewNavName"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_tiny"
+        android:singleLine="false"
+        android:text="name"
+        android:textColor="@color/primary_text_inverse"
+        android:textSize="12sp" />
+</LinearLayout>

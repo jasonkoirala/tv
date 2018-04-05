@@ -1,0 +1,80 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shirantech.sathitv.activity.PhotoUploadActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionBarSize"
+            android:background="@drawable/bg_toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listview_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.shirantech.sathitv.widget.CustomFontTextView
+        android:id="@+id/message_view"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spacing_great"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/spacing_normal"
+        android:text="@string/message_add_photo"
+        android:textColor="@drawable/add_photo_selector" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_add" />
+
+    <RelativeLayout
+        android:id="@+id/frame_upload_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/textview_upload_message"
+            style="@android:style/TextAppearance.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_image_upload"
+            style="@style/HorizontalProgressStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_normal"
+            android:layout_below="@id/textview_upload_message"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/spacing_normal" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

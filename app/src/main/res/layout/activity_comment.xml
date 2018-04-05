@@ -1,0 +1,66 @@
+<RelativeLayout
+    android:id="@+id/comment_list_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shirantech.sathitv.activity.CommentActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/separator"
+        android:layout_marginTop="@dimen/actionBarSize">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/comment_editText"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:background="@color/transparent_black" />
+
+    <com.shirantech.sathitv.widget.CustomFontEditText
+        android:id="@id/comment_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_toLeftOf="@+id/post_comment_button"
+        android:background="@android:color/transparent"
+        android:hint="@string/prompt_write_comment"
+        android:maxLines="4"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@id/post_comment_button"
+        android:layout_width="@dimen/spacing_xlarge"
+        android:layout_height="@dimen/spacing_xlarge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/comment_editText"
+        android:background="@drawable/photo_action_selector"
+        android:padding="@dimen/spacing_medium"
+        android:src="@android:drawable/ic_menu_send"
+        android:visibility="gone" />
+
+    <com.shirantech.sathitv.widget.CustomFontTextView
+        android:id="@+id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/message_no_comment"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</RelativeLayout>

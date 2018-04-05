@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_getting_horoscope">Loading todays horoscope...</string>
+
+    <!-- horoscope names-->
+    <string name="horoscope_aries">Aries</string>
+    <string name="horoscope_taurus">Taurus</string>
+    <string name="horoscope_gemini">Gemini</string>
+    <string name="horoscope_cancer">Cancer</string>
+    <string name="horoscope_leo">Leo</string>
+    <string name="horoscope_virgo">Virgo</string>
+    <string name="horoscope_libra">Libra</string>
+    <string name="horoscope_scorpio">Scorpio</string>
+    <string name="horoscope_sagittarius">Sagittarius</string>
+    <string name="horoscope_capricorn">Capricorn</string>
+    <string name="horoscope_aquarius">Aquarius</string>
+    <string name="horoscope_pisces">Pisces</string>
+
+    <!--horoscope dates-->
+    <string name="date_aries">(March 21-April 19)</string>
+    <string name="date_taurus">(April 20-May 20)</string>
+    <string name="date_gemini">(May 21-June 20)</string>
+    <string name="date_cancer">(June 21-July 22)</string>
+    <string name="date_leo">(July 23-Aug. 22)</string>
+    <string name="date_virgo">(Aug. 23-Sept. 22)</string>
+    <string name="date_libra">(Sept. 23-Oct. 22)</string>
+    <string name="date_scorpio">(Oct. 23-Nov. 21)</string>
+    <string name="date_sagittarius">(Nov. 22-Dec. 21)</string>
+    <string name="date_capricorn">(Dec. 22-Jan. 19)</string>
+    <string name="date_aquarius">(Jan. 20-Feb. 18)</string>
+    <string name="date_pisces">(Feb. 19-March 20)</string>
+
+
+    <!-- horoscope names and dates-->
+    <string name="aries">Aries(March 21-April 19)</string>
+    <string name="taurus">Taurus(April 20-May 20)</string>
+    <string name="gemini">Gemini(May 21-June 20)</string>
+    <string name="cancer">Cancer(June 21-July 22)</string>
+    <string name="leo">Leo(July 23-August 22)</string>
+    <string name="virgo">Virgo(August 23-Sept. 22)</string>
+    <string name="libra">Libra(Sept. 23-October 22)</string>
+    <string name="scorpio">Scorpio(October 23-Nov. 21)</string>
+    <string name="sagittarius">Sagittarius(Nov. 22-Dec. 21)</string>
+    <string name="capricorn">Capricorn(Dec. 22-Jan. 19)</string>
+    <string name="aquarius">Aquarius(Jan. 20-Feb. 18)</string>
+    <string name="pisces">Pisces(Feb. 19-March 20)</string>
+</resources>

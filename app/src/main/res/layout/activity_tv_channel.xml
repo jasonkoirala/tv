@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.shirantech.sathitv.activity.TvChannelActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/video_surface_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black">
+
+            <com.shirantech.sathitv.widget.VideoSurfaceView
+                android:id="@+id/video_surfaceView"
+                android:layout_width="320dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                app:video_height="@integer/default_video_height"
+                app:video_width="@integer/default_video_width"
+                />
+
+            <com.shirantech.sathitv.widget.CustomProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:message_color="@color/primary_text_inverse" />
+        </FrameLayout>
+
+         <com.shirantech.sathitv.widget.CustomFontTextView
+             android:id="@+id/textViewOtherChannels"
+            android:background="@color/primary_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:text="Other channels"
+            android:textColor="@color/primary_text_inverse"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewChannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/spacing_tiny"
+            android:paddingRight="@dimen/spacing_tiny" />
+
+    </LinearLayout>
+
+</LinearLayout>

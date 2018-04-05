@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_select_title">Select Language - भाषा चयन</string>
+    <string name="language_select_message">Please select default language\n\nपुर्वनिर्धारित भाषा चयन गर्नुहोस</string>
+    <string name="language_select_nepali">नेपाली</string>
+    <string name="language_select_english">English</string>
+</resources>

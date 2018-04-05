@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_program_list">Today\'s Program</string>
+    <string name="message_no_programs">No program data found.</string>
+    <string name="message_stream_buffering">Buffering...</string>
+    <string name="message_channel_could_not_be_played">This channel could not be played</string>
+</resources>

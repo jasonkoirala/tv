@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/photo_view"
+        android:name="com.shirantech.sathitv.fragment.FullScreenPhotoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_full_screen_photo">
+
+    </fragment>
+
+    <LinearLayout
+        android:id="@+id/caption_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_black"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium"
+        android:visibility="gone"
+        app:layout_behavior="android.support.design.widget.ViewBehavior">
+
+        <com.shirantech.sathitv.widget.CustomFontTextView
+            android:id="@+id/photo_caption_view"
+            style="@android:style/TextAppearance.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.shirantech.sathitv.widget.CustomFontItalicTextView
+            android:id="@+id/caption_update_status"
+            style="@android:style/TextAppearance.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_updating_caption"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/caption_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_black"
+        android:orientation="horizontal"
+        app:layout_behavior="android.support.design.widget.ViewBehavior">
+
+        <com.shirantech.sathitv.widget.CustomFontEditText
+            android:id="@+id/photo_caption_editText"
+            style="@android:style/TextAppearance.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/prompt_photo_caption"
+            android:maxLines="2"
+            android:padding="@dimen/spacing_medium">
+
+            <requestFocus />
+        </com.shirantech.sathitv.widget.CustomFontEditText>
+
+        <com.shirantech.sathitv.widget.CustomFontButton
+            android:id="@+id/update_caption_button"
+            style="@android:style/TextAppearance.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/photo_action_selector_light"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/cancel_update"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

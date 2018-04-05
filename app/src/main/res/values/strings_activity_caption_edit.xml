@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_caption">Update</string>
+    <string name="cancel_update">Cancel</string>
+    <string name="message_updating_caption">Updating photo caption</string>
+    <string name="error_updating_caption">Could not update the photo caption. Please try again.</string>
+</resources>

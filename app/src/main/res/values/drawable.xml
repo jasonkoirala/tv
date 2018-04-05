@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="dashboard_normal">@color/primary_light_bg</drawable>
+    <drawable name="dashboard_pressed">@color/primary_light</drawable>
+    <drawable name="dashboard_black">@color/nrn_black</drawable>
+    <drawable name="dashboard_black_pressed">@color/primary_text</drawable>
+    <drawable name="button_normal">@color/primary_dark</drawable>
+    <drawable name="button_pressed">@color/primary_dark_pressed</drawable>
+    <drawable name="photo_action_normal">@android:color/transparent</drawable>
+    <drawable name="photo_action_pressed">#66000000</drawable>
+    <drawable name="photo_action_normal_dark">#66000000</drawable>
+    <drawable name="photo_action_pressed_dark">#99000000</drawable>
+    <drawable name="photo_action_pressed_light">#66FFFFFF</drawable>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prompt_phone">Phone number</string>
+    <string name="prompt_username">Name</string>
+    <string name="prompt_country">Country</string>
+
+    <string name="message_register">Signing up…</string>
+
+    <string name="error_name_required">Name cannot be empty</string>
+    <string name="error_description_required">Description cannot be empty</string>
+    <string name="error_phone_required">Phone number cannot be empty</string>
+    <string name="error_symptom_required">Symptoms cannot be empty</string>
+    <string name="error_country_required">Country cannot be empty</string>
+    <string name="error_country_invalid">Select a proper country</string>
+</resources>
